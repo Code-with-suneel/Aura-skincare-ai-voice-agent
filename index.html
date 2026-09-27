@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Aura AI - AI powered customer support assistant">
+
+    <title>Aura AI — Customer Support</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="background">
+
+    <div class="bg-gradient"></div>
+
+    <div class="ai-glow glow-one"></div>
+    <div class="ai-glow glow-two"></div>
+    <div class="ai-glow glow-three"></div>
+
+    <div class="tech-grid"></div>
+
+    <div class="particles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="neural-lines">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+
+    <div class="background-overlay"></div>
+
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- LOGO -->
+
+        <a href="#home" class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <div>
+                <span class="brand-name">AuraAI</span>
+                <span class="brand-sub">SKINCARE SUPPORT</span>
+            </div>
+
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+
+        <nav class="desktop-nav">
+
+            <a href="#home" class="active">
+                Home
+            </a>
+
+            <a href="#agent">
+                AI Agent
+            </a>
+
+            <a href="#orders">
+                Orders
+            </a>
+
+            <a href="#call-log">
+                Call History
+            </a>
+
+        </nav>
+
+
+        <!-- NAV RIGHT -->
+
+        <div class="nav-right">
+
+            <div class="system-status">
+
+                <span class="status-dot"></span>
+
+                <span>System Online</span>
+
+            </div>
+
+            <div class="profile">
+                S
+            </div>
+
+            <!-- HAMBURGER -->
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-header">
+
+        <div class="mobile-brand">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            AuraAI
+        </div>
+
+        <button id="mobileClose" class="mobile-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="mobile-links">
+
+        <a href="#home">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+        <a href="#agent">
+            <i class="fa-solid fa-robot"></i>
+            AI Agent
+        </a>
+
+        <a href="#orders">
+            <i class="fa-solid fa-box"></i>
+            Orders
+        </a>
+
+        <a href="#call-log">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Call History
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                <span class="badge-dot"></span>
+
+                AURA SKINCARE
+
+                <span class="badge-line"></span>
+
+                AI SUPPORT
+
+            </div>
+
+
+            <h1>
+                Meet <span>Aria.</span>
+                <br>
+                Your AI Support Assistant.
+            </h1>
+
+
+            <p class="hero-description">
+
+                Aria is Aura Skincare's intelligent customer support
+                specialist. Ask about orders, delivery, returns,
+                cancellations, or anything related to Aura Skincare.
+
+            </p>
+
+
+            <!-- ================= AI ORB ================= -->
+
+            <div class="ai-orb-wrapper">
+
+                <div class="orb-status">
+                    <span id="orbStatusDot"></span>
+                    <span id="orbStatus">ARIA IS READY</span>
+                </div>
+
+
+                <div class="ai-orb-container">
+
+                    <div class="orb-ring ring-one"></div>
+                    <div class="orb-ring ring-two"></div>
+                    <div class="orb-ring ring-three"></div>
+
+
+                    <div class="ai-orb">
+
+                        <div class="orb-inner">
+
+                            <div class="orb-core">
+                                <i class="fa-solid fa-microphone"></i>
+                            </div>
+
+                            <div class="orb-wave wave-one"></div>
+                            <div class="orb-wave wave-two"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORB STATE -->
+
+                <div class="voice-state" id="voiceState">
+                    Ready to assist
+                </div>
+
+            </div>
+
+
+            <!-- ================= CALL BUTTONS ================= -->
+
+            <div class="call-actions">
+
+                <button
+                    class="start-call"
+                    id="startCall">
+
+                    <span class="call-icon">
+                        <i class="fa-solid fa-microphone"></i>
+                    </span>
+
+                    <span>Start Call</span>
+
+                </button>
+
+
+                <button
+                    class="end-call"
+                    id="endCall"
+                    disabled>
+
+                    <i class="fa-solid fa-phone-slash"></i>
+
+                    End Call
+
+                </button>
+
+            </div>
+
+
+            <!-- ================= TEXT SUPPORT ================= -->
+
+            <div class="text-support-box">
+
+                <div class="text-support-header">
+
+                    <div class="text-support-title">
+
+                        <div class="chat-icon">
+                            <i class="fa-regular fa-message"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Prefer typing?
+                            </strong>
+
+                            <span>
+                                Chat with Aria
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <span class="chat-online">
+                        <span></span>
+                        Online
+                    </span>
+
+                </div>
+
+
+                <!-- CHAT -->
+
+                <div
+                    class="chat-box"
+                    id="chatBox">
+
+                    <div class="welcome-message">
+
+                        <div class="ai-avatar">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+
+                        <div class="message-content">
+
+                            <span class="message-name">
+                                Aria
+                            </span>
+
+                            <p>
+                                Hi! I'm Aria from Aura Skincare.
+                                How can I help you today?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TYPING -->
+
+                <div
+                    class="typing-indicator"
+                    id="typingIndicator">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    Aria is thinking...
+
+                </div>
+
+
+                <!-- INPUT -->
+
+                <div class="text-input-row">
+
+                    <button
+                        class="chat-mic"
+                        id="chatMic"
+                        title="Voice input">
+
+                        <i class="fa-solid fa-microphone"></i>
+
+                    </button>
+
+
+                    <input
+                        type="text"
+                        id="textInput"
+                        placeholder="Ask Aria about orders, delivery, returns..."
+                        autocomplete="off"
+                    />
+
+
+                    <button
+                        class="send-button"
+                        id="sendButton"
+                        aria-label="Send message">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="text-hint">
+
+                    Try:
+                    <button class="quick-question">
+                        Where is ORD-101?
+                    </button>
+
+                    <button class="quick-question">
+                        What is your return policy?
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TEST ORDERS ================= -->
+
+<section class="orders-section" id="orders">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    TEST DATA
+                </span>
+
+                <h2>
+                    Test Orders
+                </h2>
+
+                <p>
+                    Use these orders to test Aria's live order lookup.
+                </p>
+
+            </div>
+
+
+            <div class="orders-count">
+
+                <i class="fa-solid fa-database"></i>
+
+                3 Test Orders
+
+            </div>
+
+        </div>
+
+
+        <div class="orders-grid">
+
+
+            <!-- ORDER 101 -->
+
+            <div class="order-card">
+
+                <div class="order-top">
+
+                    <div class="order-icon">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="order-number">
+                            ORD-101
+                        </span>
+
+                        <span class="customer-name">
+                            Priya Sharma
+                        </span>
+
+                    </div>
+
+                    <span class="order-status out">
+                        Out for Delivery
+                    </span>
+
+                </div>
+
+
+                <div class="order-details">
+
+                    <div>
+                        <span>Product</span>
+                        <strong>Vitamin C Serum (30ml)</strong>
+                    </div>
+
+                    <div>
+                        <span>Amount</span>
+                        <strong>₹699</strong>
+                    </div>
+
+                    <div>
+                        <span>Courier</span>
+                        <strong>BlueDart BD-982103</strong>
+                    </div>
+
+                    <div>
+                        <span>Expected</span>
+                        <strong>6 PM today</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORDER 102 -->
+
+            <div class="order-card">
+
+                <div class="order-top">
+
+                    <div class="order-icon delivered-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="order-number">
+                            ORD-102
+                        </span>
+
+                        <span class="customer-name">
+                            Rahul Verma
+                        </span>
+
+                    </div>
+
+                    <span class="order-status delivered">
+                        Delivered
+                    </span>
+
+                </div>
+
+
+                <div class="order-details">
+
+                    <div>
+                        <span>Product</span>
+                        <strong>Hydrating Sunscreen SPF 50</strong>
+                    </div>
+
+                    <div>
+                        <span>Amount</span>
+                        <strong>₹499</strong>
+                    </div>
+
+                    <div>
+                        <span>Courier</span>
+                        <strong>Delhivery DL-441029</strong>
+                    </div>
+
+                    <div>
+                        <span>Status</span>
+                        <strong>14 days ago</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORDER 103 -->
+
+            <div class="order-card">
+
+                <div class="order-top">
+
+                    <div class="order-icon processing-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="order-number">
+                            ORD-103
+                        </span>
+
+                        <span class="customer-name">
+                            Ananya Patel
+                        </span>
+
+                    </div>
+
+                    <span class="order-status processing">
+                        Processing
+                    </span>
+
+                </div>
+
+
+                <div class="order-details">
+
+                    <div>
+                        <span>Product</span>
+                        <strong>Green Tea Face Wash + Toner</strong>
+                    </div>
+
+                    <div>
+                        <span>Amount</span>
+                        <strong>₹850</strong>
+                    </div>
+
+                    <div>
+                        <span>Ordered</span>
+                        <strong>3 hours ago</strong>
+                    </div>
+
+                    <div>
+                        <span>Cancellation</span>
+                        <strong>Eligible</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features-section" id="agent">
+
+    <div class="section-container">
+
+        <div class="section-heading center">
+
+            <span class="section-label">
+                AI CAPABILITIES
+            </span>
+
+            <h2>
+                Built for Real Customer Conversations
+            </h2>
+
+            <p>
+                Aria understands customer intent and follows
+                Aura Skincare policies while helping customers.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">
+                    01
+                </div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+
+                <h3>
+                    Natural Conversation
+                </h3>
+
+                <p>
+                    Customers can speak naturally or type their
+                    questions and continue the conversation.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">
+                    02
+                </div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>
+                    Live Order Lookup
+                </h3>
+
+                <p>
+                    Aria can retrieve order information using
+                    customer order IDs.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-number">
+                    03
+                </div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>
+                    Policy Aware
+                </h3>
+
+                <p>
+                    Responses follow Aura Skincare's shipping,
+                    return and cancellation policies.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CALL LOG ================= -->
+
+<section class="call-log-section" id="call-log">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    CONVERSATION
+                </span>
+
+                <h2>
+                    Call Log & Summary
+                </h2>
+
+                <p>
+                    Your conversation transcript and structured outcome
+                    will appear here after the call.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="call-log-container">
+
+            <div class="empty-log" id="emptyLog">
+
+                <div class="empty-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <h3>
+                    No call completed yet
+                </h3>
+
+                <p>
+                    Start a call with Aria to generate a transcript
+                    and structured summary.
+                </p>
+
+            </div>
+
+
+            <div
+                class="completed-log"
+                id="completedLog">
+
+                <div class="transcript-area">
+
+                    <h3>
+                        Transcript
+                    </h3>
+
+                    <div id="finalTranscript"></div>
+
+                </div>
+
+
+                <div class="summary-area">
+
+                    <h3>
+                        Structured Outcome
+                    </h3>
+
+                    <pre id="jsonSummary"></pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <div>
+
+                <strong>
+                    AuraAI
+                </strong>
+
+                <span>
+                    AI CUSTOMER SUPPORT
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            AI-powered customer support for Aura Skincare.
+        </p>
+
+
+        <span class="footer-copy">
+            © 2026 AuraAI
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
