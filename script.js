@@ -10,7 +10,7 @@
 // BACKEND API
 // =====================================================
 
-const API_URL = "http://127.0.0.1:8000/api/chat/";
+const API_URL = "https://aura-skincare-ai-voice-agent-8.onrender.com/api/chat/";
 
 
 // =====================================================
